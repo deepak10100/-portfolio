@@ -10,21 +10,21 @@ function Footer() {
         <Flex justifyContent={'space-around'} alignItems={'center'} py={5} >
             <Text as={'p'} fontSize={['x-small','medium','large']} >© 2024 Deepak Malakar</Text>
                 <HStack spacing={0}>
-                    <Link target='_blank' to={'https://www.linkedin.com/in/deepak-malakar-355061214/'}>
             <IconButton variant={'ghost'} fontSize={[null,'medium','x-large']}  _hover={{bg:"#39FF14", color:"black"}} borderRadius={50}>
+                    <Link target='_blank' to={'https://www.linkedin.com/in/deepak-malakar-355061214/'}>
                     <AiFillLinkedin/>
-            </IconButton>
                     </Link>
+            </IconButton>
+            <IconButton _hover={{bg:"#39FF14", color:"black"}} variant={'ghost'} fontSize={[null,'medium','x-large']} borderRadius={50} >
             <Link to={'https://github.com/deepak10100'} target='_blank'>
-            <IconButton _hover={{bg:"#39FF14", color:"black"}} variant={'ghost'} fontSize={[null,'medium','x-large']} borderRadius={50} >
             <AiOutlineGithub/>
-            </IconButton>
             </Link>
-            <Link to={'mailto:deepakmalakar98185@gmail.com'}>
+            </IconButton>
             <IconButton _hover={{bg:"#39FF14", color:"black"}} variant={'ghost'} fontSize={[null,'medium','x-large']} borderRadius={50} >
+            <Link to={'mailto:deepakmalakar98185@gmail.com'}>
             <AiFillMail/>
-            </IconButton>
             </Link>
+            </IconButton>
            
                 </HStack>
         </Flex>
