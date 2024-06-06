@@ -10,7 +10,7 @@ function About() {
         <Stack py={20}>
           <HStack spacing={22} pb={5} >
          <IconButton _hover={{bg:"none"}} bg={'none'} fontSize={['xx-large','xx-large','xxx-large']} icon={<FaUniversity />}/>  
-            <Heading as={'h1'} fontSize={['xx-large','xx-large','xxx-large']}>  Education</Heading>
+            <Heading color={'#39FF14'} as={'h1'} fontSize={['xx-large','xx-large','xxx-large']}>  Education</Heading>
           </HStack>
             <AboutCard heading={"Shiban S Tyagi S S"} text={'Hign School (10 class)'} year={'2017'} per={'Presentage 70%'}  />
             <AboutCard heading={"Shambhu Dayal Inter College"} text={'InterMedidate School (12 class)'} per={"Presentage 50%"} year={'2019'}  />
