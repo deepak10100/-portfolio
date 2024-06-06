@@ -11,19 +11,7 @@ function Project() {
           <Heading as={'h1'} fontSize={['x-large','xx-large','xxx-large']}>Project</Heading>
           <Text as={'p'}>List of projects that I involved or have made in the past.</Text>
           <SimpleGrid py={7} alignItems={'center'} justifyContent={'center'} columns={[1,null,3]} columnGap={2} rowGap={5}  >
-            <GridItem>
-            <ProjectCard/>
-            </GridItem>
-            <GridItem>
-            <ProjectCard/>
-            </GridItem>
-            <GridItem>
-            <ProjectCard/>
-            </GridItem>
-            <GridItem>
-            <ProjectCard/>
-            </GridItem>
-            <GridItem>
+            <GridItem color={'red'} width={'md'} >
             <ProjectCard/>
             </GridItem>
             

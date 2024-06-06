@@ -4,7 +4,7 @@ import { Badge,  Card, CardBody, CardFooter, CardHeader, Heading, Image,  Stack,
 function ProjectCard() {
   return (
     <>
-     <Card maxW={'sm'} cursor={"pointer"} _hover={{ borderWidth:"1px",borderColor:"#39FF14"}}>
+     {/* <Card maxW={'sm'} cursor={"pointer"} _hover={{ borderWidth:"1px",borderColor:"#39FF14"}}>
                 <CardBody>
                 <Image
       src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
@@ -26,7 +26,9 @@ function ProjectCard() {
 </Stack>
                 </CardFooter>
 
-            </Card>
+      </Card> */}
+
+      <Heading  fontSize={['large','x-large','xx-large']}>No Project Available</Heading>
     </>
   )
 }
