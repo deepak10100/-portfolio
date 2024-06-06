@@ -8,10 +8,10 @@ function TackStack() {
         <Stack py={8}>
             <Heading as={'h1'} fontSize={['x-large','xx-large','xxx-large']}>Tech Stack</Heading>
             <Text as={'p'} >A list of my favorite tools and technologies that I use on a regular basis.</Text>
-            <Tabs size='md' colorScheme='green'  variant='enclosed-colored'>
-  <TabList  py={5} cursor={'pointer'}>
-    <Tab as={"h2"} fontSize={['sm','md']} >Programming Languages</Tab>
-    <Tab as={'h2'} fontSize={['sm','md']} >Database</Tab>
+            <Tabs size='md' colorScheme='green'  variant='enclosed'>
+  <TabList py={5}>
+    <Tab   fontSize={['sm','md']} >Programming Languages</Tab>
+    <Tab fontSize={['sm','md']} >Database</Tab>
   </TabList>
   <TabPanels>
     <TabPanel>
