@@ -19,8 +19,8 @@ function Navbar() {
   return (
     <>
       <Flex padding={1} height={'50px'} justifyContent={'space-between'} bg={useColorModeValue("white", "gray.700")} alignItems={'center'} boxShadow={'lg'} width={'100vw'}  pos={'fixed'} top={0} zIndex={50} >
-            <IconButton ref={btnRef}   onClick={onOpen} size={'md'} borderRadius={'50'} variant={'ghost'} fontSize={'lg'} ><AiOutlineMenuFold /></IconButton>
-            <ColorModeSwitcher />
+            <IconButton ref={btnRef}   onClick={onOpen} size={'md'} borderRadius={'50'} _hover={{bg:"#39FF14", color:"blackAlpha.800"}}  variant={'ghost'} fontSize={'lg'} ><AiOutlineMenuFold /></IconButton>
+            <ColorModeSwitcher _hover={{bg:"#39FF14", color:"blackAlpha.800"}} />
             
       </Flex>
 
@@ -39,11 +39,11 @@ function Navbar() {
             <VStack>
            <ButtonGroup>
               <VStack>
-              <Link to={'/about-me'}>
-              <Button onClick={onClose} variant={'ghost'} >About Me</Button>
+              <Link  to={'/about-me'}>
+              <Button _hover={{bg:"#39FF14", color:"blackAlpha.800"}} onClick={onClose} variant={'ghost'} >About Me</Button>
               </Link>
              <Link to={'contact-us'}>
-             <Button onClick={onClose} variant={"ghost"} >Contact Me</Button>
+             <Button _hover={{bg:"#39FF14", color:"blackAlpha.800"}} onClick={onClose} variant={"ghost"} >Contact Me</Button>
              </Link>
               </VStack>
            </ButtonGroup>
