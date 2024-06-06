@@ -28,7 +28,7 @@ function Contact() {
        
         <VStack>
         <Stack as={'form'} ref={form} onSubmit={sendEmail} borderWidth={'1px'} borderColor={'A0AEC0'}  p={7} borderRadius={7} spacing={7} >
-            <Heading  fontSize={['md','x-large','xx-large']} color={'#39FF14'} >Let's get in touch. Leave me your message. 💬</Heading>
+            <Heading  fontSize={['large','x-large','xx-large']} color={'#39FF14'} >Let's get in touch. Leave me your message. 💬</Heading>
           
             <FormControl>
                 <FormLabel  >Name</FormLabel>
