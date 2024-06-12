@@ -39,8 +39,7 @@ function ProjectCard() {
  </GridItem>
 {/* </Stack> */}
 </SimpleGrid>
-                </CardFooter>
-
+</CardFooter>
      </Link>
       </Card>
     </>
