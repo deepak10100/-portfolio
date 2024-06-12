@@ -43,9 +43,6 @@ function ProjectCard() {
 
      </Link>
       </Card>
-
-
-      {/* <Heading  fontSize={['large','x-large','xx-large']}>No Project Available</Heading> */}
     </>
   )
 }
