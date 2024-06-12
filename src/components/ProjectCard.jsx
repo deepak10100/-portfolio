@@ -1,34 +1,51 @@
 import React from 'react'
-import { Badge,  Card, CardBody, CardFooter, CardHeader, Heading, Image,  Stack, Text } from '@chakra-ui/react'
+import { Badge,  Card, CardBody, CardFooter, CardHeader, GridItem, Heading, Image,  SimpleGrid, Text } from '@chakra-ui/react'
+import projectimages from '../assets/projectimages/Screenshot 2024-06-12 151343.png'
+import { Link } from 'react-router-dom'
 
 function ProjectCard() {
   return (
     <>
-     {/* <Card maxW={'sm'} cursor={"pointer"} _hover={{ borderWidth:"1px",borderColor:"#39FF14"}}>
+     <Card maxW={'sm'} cursor={"pointer"} _hover={{ borderWidth:"1px",borderColor:"#39FF14"}}>
+     <Link to={'https://blog-seven-lyart-60.vercel.app/'}>
                 <CardBody>
                 <Image
-      src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+      src={projectimages}
       alt='Green double couch with wooden legs'
       borderRadius='lg'
     />
     <CardHeader px={0}>
-        <Heading as={'h1'} fontSize={[null,'large','large']}>ASTRO NEWS PORTALS (Demo) </Heading>
+        <Heading as={'h1'} fontSize={[null,'large','large']}>Blog Site </Heading>
     </CardHeader>
-    <Text as={'p'} >Discover Malaysia's premier news portals, offering comprehensive coverage of diverse topics and boasting over 2 million monthly active users (MAU)</Text>
+    <Text as={'p'} >Here a blog site is created, name description and image are uploaded in the database. Here is a simple blog website:</Text>
                 </CardBody>
                 <CardFooter>
                 
-                <Stack direction={'row '}>
-  <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>Default</Badge>
-  <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>Success</Badge>
-  <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>Removed</Badge>
-  <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>New</Badge>
-</Stack>
+                {/* <Stack direction={['row','column','row']} width={'sm'}> */}
+    <SimpleGrid columns={['3','4']} gap={4} >
+
+   
+ <GridItem colSpan={1}>
+ <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>vite+react</Badge>
+ </GridItem>
+ <GridItem colSpan={1}>
+ <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>mongodb</Badge>
+ </GridItem>
+ <GridItem colSpan={1}>
+ <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>express</Badge>
+ </GridItem>
+ <GridItem colSpan={1}>
+ <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>rtk query</Badge>
+ </GridItem>
+{/* </Stack> */}
+</SimpleGrid>
                 </CardFooter>
 
-      </Card> */}
+     </Link>
+      </Card>
 
-      <Heading  fontSize={['large','x-large','xx-large']}>No Project Available</Heading>
+
+      {/* <Heading  fontSize={['large','x-large','xx-large']}>No Project Available</Heading> */}
     </>
   )
 }
