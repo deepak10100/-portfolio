@@ -1,23 +1,22 @@
 import React from 'react'
 import { Badge,  Card, CardBody, CardFooter, CardHeader, GridItem, Heading, Image,  SimpleGrid, Text } from '@chakra-ui/react'
-import projectimages from '../assets/projectimages/Screenshot 2024-06-12 151343.png'
 import { Link } from 'react-router-dom'
 
-function ProjectCard() {
+function ProjectCard({title,desc, image,bedge1,bedge2,bedge3,bedge4,blogUrl}) {
   return (
     <>
-     <Card maxW={'sm'} cursor={"pointer"} _hover={{ borderWidth:"1px",borderColor:"#39FF14"}}>
-     <Link to={'https://blog-seven-lyart-60.vercel.app/'}>
+     <Card maxW={'sm'}  cursor={"pointer"} _hover={{ borderWidth:"1px",borderColor:"#39FF14"}}>
+     <Link to={blogUrl}>
                 <CardBody>
                 <Image
-      src={projectimages}
+      src={image} width={'full'} height={'200px'}
       alt='Green double couch with wooden legs'
       borderRadius='lg'
     />
     <CardHeader px={0}>
-        <Heading as={'h1'} fontSize={[null,'large','large']}>Blog Site </Heading>
+        <Heading as={'h1'} fontSize={[null,'large','large']}>{title} </Heading>
     </CardHeader>
-    <Text as={'p'} >Here a blog site is created, name description and image are uploaded in the database. Here is a simple blog website:</Text>
+    <Text as={'p'} >{desc}</Text>
                 </CardBody>
                 <CardFooter>
                 
@@ -26,16 +25,16 @@ function ProjectCard() {
 
    
  <GridItem colSpan={1}>
- <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>vite+react</Badge>
+ <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>{bedge1}</Badge>
  </GridItem>
  <GridItem colSpan={1}>
- <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>mongodb</Badge>
+ <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>{bedge2}</Badge>
  </GridItem>
  <GridItem colSpan={1}>
- <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>express</Badge>
+ <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>{bedge3}</Badge>
  </GridItem>
  <GridItem colSpan={1}>
- <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>rtk query</Badge>
+ <Badge as={'p'} borderRadius={7} fontSize={'x-small'} colorScheme='purple'>{bedge4}</Badge>
  </GridItem>
 {/* </Stack> */}
 </SimpleGrid>
