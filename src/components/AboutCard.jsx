@@ -19,18 +19,8 @@ function AboutCard({heading,text, year,per}) {
                 </CardBody>
                 <CardFooter>
                     <SimpleGrid columns={[2,4,6,8]} gridGap={2}>
-                        <GridItem>
-                        <Badge as={'p'} borderRadius={5} >Hindi</Badge>
-                        </GridItem>
-                        <GridItem>
-                        <Badge as={'p'} borderRadius={5}>Math</Badge>
-                        </GridItem>
-                        <GridItem>
-                        <Badge as={'p'} borderRadius={5}>English</Badge>
-                        </GridItem>
-                        <GridItem>
-                        <Badge as={'p'} borderRadius={5}>Science</Badge>
-                        </GridItem>
+                       
+                        
                         <GridItem>
                         <Badge as={'p'} borderRadius={5}>{per}</Badge>
                         </GridItem>
