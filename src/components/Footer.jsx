@@ -1,5 +1,4 @@
 import { Container, Flex, HStack, IconButton, Text } from '@chakra-ui/react'
-import React from 'react'
 import { AiFillLinkedin, AiFillMail, AiOutlineGithub } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 
@@ -8,11 +7,7 @@ function Footer() {
     <>
      <Container maxW={'container.2xl'} p={5}>
         <Flex justifyContent={'space-around'} alignItems={'center'} py={5} >
-<<<<<<< HEAD
             <Text as={'p'} fontSize={['x-small','medium','large']} >© {new Date().getFullYear()} Deepak Malakar</Text>
-=======
-            <Text as={'p'} fontSize={['x-small','medium','large']} >© 2024 Deepak Malakar</Text>
->>>>>>> 42b2c0fc569056a94c5b755bec75fcacda6e85fb
                 <HStack spacing={0}>
             <IconButton variant={'ghost'} fontSize={[null,'medium','x-large']}  _hover={{bg:"#39FF14", color:"black"}} borderRadius={50}>
                     <Link target='_blank' to={'https://www.linkedin.com/in/deepak-malakar-355061214/'}>
