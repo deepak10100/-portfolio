@@ -14,7 +14,7 @@ function About() {
           </HStack>
             <AboutCard heading={"Shiban S Tyagi S S"} text={'Hign School (10 class)'} year={'2017'} per={'Presentage 70%'}  />
             <AboutCard heading={"Shambhu Dayal Inter College"} text={'InterMedidate School (12 class)'} per={"Presentage 50%"} year={'2019'}  />
-            <AboutCard heading={"Chodhary Charan Singh University College"} text={'Bachelor Of Commerce (B.Com)'} per={"Result Not Declered"} year={'2024'}  />
+            <AboutCard heading={"Chodhary Charan Singh University College"} text={'Bachelor Of Commerce (B.Com)'} per={"Psss"} year={'2024'}  />
         </Stack>
      </Container>
     </>
