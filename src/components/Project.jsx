@@ -6,7 +6,9 @@ import NoteApp from '../assets/projectimages/Noteapp.png'
 import ProductPage from '../assets/projectimages/productpage.png'
 import Todo from '../assets/projectimages/todo.png'
 import Card from '../assets/projectimages/cart.png'
+import Ecommerce from '../assets/projectimages/Ecommerce.png'
 import Blog from '../assets/projectimages/blog.png'
+import todoRedux from '../assets/projectimages/todoRedux.png'
 function Project() {
   return (
     <>
@@ -33,6 +35,12 @@ function Project() {
             </GridItem>
             <GridItem color={'red'}>
             <ProjectCard image={Blog} blogUrl={'https://deepak10100.github.io/my-website/blog.html'} title={"Blog Page"}  bedge1={'tailwind css'}  bedge3={'HTML'} />
+            </GridItem>
+            <GridItem color={'red'}>
+            <ProjectCard image={Ecommerce} blogUrl={'https://react-project-one-wine.vercel.app/ecommerce'} title={"Ecommerce"}  bedge1={'tailwind css'}  bedge3={'HTML'} bedge4={'React'} bedge5={'JavaScript'} />
+            </GridItem>
+            <GridItem color={'red'}>
+            <ProjectCard image={todoRedux} blogUrl={'https://react-project-one-wine.vercel.app/todo'} title={"Ecommerce"}  bedge1={'tailwind css'}  bedge3={'HTML'} bedge4={'React'} bedge5={'JavaScript'} />
             </GridItem>
             
     

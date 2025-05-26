@@ -68,6 +68,13 @@ function TackStack() {
         </CardBody>
       </Card>
         </GridItem>
+        <GridItem>
+        <Card cursor={'pointer'} bg={'none'} borderWidth={'1px'} borderColor={'gray.600'} _hover={{borderColor:"#39FF14"}} >
+        <CardBody>
+            <Text>Tailwind CSS</Text>
+        </CardBody>
+      </Card>
+        </GridItem>
       </SimpleGrid>
       
       </Flex>

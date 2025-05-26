@@ -8,7 +8,7 @@ function ProjectCard({title,desc, image,bedge1,bedge2,bedge3,bedge4,blogUrl}) {
      <Card maxW={'sm'}  cursor={"pointer"} _hover={{ borderWidth:"1px",borderColor:"#39FF14"}}>
      <Link to={blogUrl}>
       <CardBody>
-      <Image src={image} width={'full'} height={'200px'} alt='Green double couch with wooden legs' borderRadius='lg'/>
+      <Image backgroundSize={'cover'} backgroundPosition={'center'} src={image} width={'full'} height={'200px'} alt='Green double couch with wooden legs' borderRadius='lg'/>
     <CardHeader px={0}>
     <Heading as={'h1'} fontSize={[null,'large','large']}>{title} </Heading>
     </CardHeader>
