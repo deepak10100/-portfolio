@@ -27,7 +27,7 @@ function TackStack() {
         <GridItem>
         <Card cursor={'pointer'} bg={'none'} borderWidth={'1px'} borderColor={'gray.600'} _hover={{borderColor:"#39FF14"}} >
         <CardBody>
-            <Text>Reac Js</Text>
+            <Text>React Js</Text>
         </CardBody>
       </Card>
         </GridItem>
